@@ -1,7 +1,7 @@
 <?php
-    require_once('class/Administador.php');
-    require_once('class/Operador.php');
     require_once('class/Persona.php');
+    require_once('class/Administrador.php');
+    require_once('class/Operador.php');
     require_once('class/Celular.php');
     require_once('class/Contacto.php');
 
@@ -30,6 +30,24 @@
     $tel1->setContacto($c2);
 
     echo '<br>';
-    $tel1->getContatos();
+    //$tel1->getContatos();
+
+
+    $operador1 = new Operador("Juan", "Perez");
+    $operador2 = new Operador("Lucas", "Gomez");
+    $admin = new Administrador("Admin", "Root");
+    //$operador1->login();
+
+    echo("Operador 1 - " . $operador1->nombre);
+    echo '<br>';
+    $operador1->login();
+    echo '<br>';
+
+    echo("Operador 2 - " . $operador2->nombre);
+    echo '<br>';
+
+    echo("Admin - " . $admin->nombre);
+    echo '<br>';
+    $admin->login();
 
 ?>

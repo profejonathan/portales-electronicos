@@ -1,11 +1,16 @@
 <?php
-
-    class Operador{
+    
+    
+    class Operador extends Persona{
         public $legajo;
+
+/*         function __construct() {
+            echo("Soy una clases hija de Persona </b");
+        } */
 
         // metodos
         public function aceptarProceso(){
-            echo 'Porcesando';
+            echo 'Procesando';
         }
 
 
